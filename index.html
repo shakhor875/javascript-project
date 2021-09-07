@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Css Style Sheet Link -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Bootstrap Link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>Mac Book</title>
+</head>
+
+<body>
+    <section class="d-flex w-75 mx-auto">
+        <div class="col-md-6">
+            <img class="w-75" src="images/mac.png" alt="">
+        </div>
+
+        <div class="col-md-6">
+            <div>
+                <h2>Customize your 24-inch iMac with Apple M1 chip</h2>
+                <p>apple M1 chip with 8-core CPU with 4 performance cores and 4 efficiency , 7-core GPU ,and 16-core
+                    neural
+                    Engine 8GB unified memory 265GB ssd storage Two thunderbolt / USB ports Magic Mouse magic
+                    Keyboard-Us
+                    English</p>
+
+                <div class="p-2 text-secondary">
+                    <div class="mb-3">
+                        <h5>Memory</h5>
+                        <button onclick="firstMemory()" class="border-1 rounded">8 GB unified memory</button>
+                        <button onclick="secondMemory()" class="border-1 rounded">16 GB unified memory</button>
+                    </div>
+
+                    <div class="mb-3">
+                        <h5>Storage</h5>
+                        <button onclick="firstStorage()" class="border-1 rounded">256 GB ssd storage</button>
+                        <button onclick="secondStorage()" class="border-1 rounded">512 GB ssd storage</button>
+                        <button onclick="thirdStorage()" class="border-1 rounded">1tb ssd storage</button>
+                    </div>
+
+                    <div class="mb-3">
+                        <h5 class="border-1 rounded">Choose your delivery option</h5>
+                        <button onclick="firstDelivery()" class="border-1 rounded">Friday,Aug 25 free Delivery</button>
+                        <button onclick="secondDelivery()" class="border-1 rounded">Friday,Aug 21 Delivery charge
+                            $20</button>
+                    </div>
+                </div>
+
+                <div class="d-flex mt-3 text-secondary">
+                    <div class="col-md-8 row">
+                        <h5 class="charge">Best price</h5>
+                        <h5 class="charge">Extra memory Cost</h5>
+                        <h5 class="charge">Extra storage Cost</h5>
+                        <h5 class="charge">Delivery Charge</h5>
+                        <h5 class="charge">Total price</h5>
+
+                    </div>
+                    <div class="col-md-4">
+                        <h5>$<span id="best-price">1299</span></h5>
+                        <h5>$<span id="memory-cost">00</span></h5>
+                        <h5>$<span id="storage-cost">00</span></h5>
+                        <h5>$<span id="delivery-cost">00</span></h5>
+                        <h5>$<span id="total-price">1299</span></h5>
+                    </div>
+                </div>
+
+                <div class="mt-3">
+                    <h5>Add promo code</h5>
+                    <input id="discount-input" type="text">
+                    <button id="discount-btn" type="button" class="btn btn-danger">Apply</button>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <footer class="text-center mt-5 border-top border border-2">
+        <h2>Total Discount : $<span id="discount-price">00</span> </h2>
+    </footer>
+
+
+
+    <script src="js/app.js"></script>
+</body>
+
+</html>
